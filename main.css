@@ -19,7 +19,7 @@ a {
   background-image: url(header.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -30,7 +30,6 @@ a {
 .container {
   padding: 15px;
 }
-
 .main-container {
   padding: 0 15px;
 }
