@@ -117,7 +117,7 @@ header {
   background-color: #fff;
   padding: 16px;
   border: 1px solid #dfe1e6;
-  margin: 85px 13px;
+  margin: 85px 14px;
 }
 
 .project-card {
@@ -133,9 +133,15 @@ header {
   list-style: none;
 }
 
+.works-text {
+  margin: 12px;
+}
+
 .about-me-btns li {
-  margin: 8px;
-  padding: 5px;
+  font-weight: 600;
+  margin: 0 5px;
+  line-height: 16px;
+  font-size: 13px;
 }
 
 .tech-list {
@@ -143,6 +149,8 @@ header {
   padding: 0;
   list-style: none;
   align-items: flex-start;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .tech-list li {
@@ -161,7 +169,7 @@ header {
   width: 124px;
   height: 48px;
   left: 0;
-  margin: 8px;
+  margin-bottom: 18px;
   font-style: normal;
   font-weight: 500;
   color: #396df2;
@@ -179,6 +187,7 @@ header {
 .decription-text {
   color: #344563;
   margin-left: 10px;
+  margin-top: 12px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -191,11 +200,6 @@ header {
 
 .about-me-card {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  height: 587.15px;
   border-top-right-radius: 80px;
 }
 
@@ -205,13 +209,15 @@ header {
   padding: 10px 10px;
   align-items: center;
   border-radius: 8px;
-  margin: 12px;
-  width: 48px;
-  left: 12px;
+  margin: 12px 2px;
+  width: 100%;
 }
 
 .common-stack p {
   margin-left: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .list-of-imgs {
@@ -223,8 +229,56 @@ header {
   width: auto;
 }
 
+.langu {
+  margin-right: 53%;
+}
+
 .common {
   border-bottom: solid 1px #dfe1e6;
   padding-bottom: 23px;
   margin-top: 24px;
+}
+
+.span-li {
+  margin-left: 209px;
+}
+
+.span-list {
+  margin-left: 120px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+}
+
+.drop img {
+  width: 14px;
+}
+
+.language-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-down h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.language-down i {
+  font-size: 20px;
+}
+
+.list-language {
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
