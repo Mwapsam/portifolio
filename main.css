@@ -283,12 +283,16 @@ header {
 }
 
 footer {
-  background: #6070FF;
+  background: #6070ff;
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  border: 5px solid goldenrod;
+  border-top-left-radius: 80px;
+  margin-top: 100px;
+  background-image: url(./assets/form.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 footer h2 {
@@ -319,7 +323,7 @@ footer p {
 
 .t input {
   background: #fff;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 15px 38px 15px 16px;
   font-style: normal;
@@ -334,4 +338,19 @@ form textarea {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 38px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 22px;
+}
+
+form button {
+  width: max-content;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
 }
