@@ -202,6 +202,19 @@ header {
   border-top-right-radius: 80px;
 }
 
+footer p {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-bottom: 87px;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .common-stack {
   display: flex;
   background-color: #f7f7f9;
@@ -305,27 +318,16 @@ footer h2 {
   margin-top: 102px;
 }
 
-footer p {
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
-  margin-bottom: 87px;
-  margin-top: 12px;
-}
-
-.t {
+.form-items {
   display: flex;
   flex-direction: column;
 }
 
-.t input {
+.form-items input {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding: 15px 38px 15px 16px;
+  padding: 15px 80px 15px 16px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
