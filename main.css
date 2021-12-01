@@ -202,6 +202,19 @@ header {
   border-top-right-radius: 80px;
 }
 
+footer p {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-bottom: 87px;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .common-stack {
   display: flex;
   background-color: #f7f7f9;
@@ -280,4 +293,73 @@ header {
 .list-language {
   margin-bottom: 16px;
   margin-top: 16px;
+}
+
+footer {
+  background: #6070ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 80px;
+  margin-top: 100px;
+  background-image: url(./assets/contactbackground.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+footer h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  margin-top: 102px;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-items input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px 80px 15px 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+form textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 38px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 22px;
+}
+
+form button {
+  width: max-content;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
+  color: #6070ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid #cfd8dc;
+  margin-bottom: 45px;
 }
