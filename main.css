@@ -21,6 +21,16 @@ img {
   color: #6070ff;
 }
 
+.logo {
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-delay: 0s;
+}
+
+.logo:hover {
+  font-size: 27px;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -383,6 +393,17 @@ form button {
 
   .hiden-on-mobile {
     display: block;
+  }
+
+  .logo {
+    transition-property: font-size, color;
+    transition-duration: 2s;
+    transition-delay: 0s;
+  }
+
+  .logo:hover {
+    font-size: 27px;
+    color: #0834a3;
   }
 
   header {
