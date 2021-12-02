@@ -461,7 +461,6 @@ form button {
   .intro-text-2 {
     font-weight: normal;
     font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     color: #344563;
@@ -529,7 +528,7 @@ form button {
   }
 
   .works-text {
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 12px;
     font-style: normal;
     font-weight: bold;
