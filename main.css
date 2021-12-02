@@ -435,6 +435,17 @@ form button {
     color: rgba(52, 69, 99, 1);
   }
 
+  .nav-bar-list a {
+    transition-property: font-size, color;
+    transition-duration: 2s;
+    transition-delay: 0s;
+  }
+
+  .nav-bar-list a:hover {
+    font-size: 21px;
+    color: #0834a3;
+  }
+
   .main-content {
     background-image: url(./assets/desktop.png);
     background-repeat: no-repeat;
