@@ -395,6 +395,11 @@ form button {
     display: block;
   }
 
+  .social-icons a {
+    font-size: 25px;
+    color: #505f79;
+  }
+
   .logo {
     transition-property: font-size, color;
     transition-duration: 2s;
@@ -411,6 +416,15 @@ form button {
     justify-content: space-between;
     padding: 25px 50px;
     background-color: #fff;
+  }
+
+  .menu a {
+    color: #6070ff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .span-icon {
@@ -468,15 +482,6 @@ form button {
     padding: 0 15px;
   }
 
-  .menu a {
-    color: #6070ff;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-  }
-
   .intro-text {
     font-style: normal;
     font-weight: bold;
@@ -508,11 +513,6 @@ form button {
   .social-icons li {
     list-style: none;
     margin-right: 20px;
-  }
-
-  .social-icons a {
-    font-size: 25px;
-    color: #505f79;
   }
 
   .connect {
@@ -805,4 +805,3 @@ form button {
     align-self: center;
   }
 }
-
