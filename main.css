@@ -470,6 +470,9 @@ a .btn-two {
   .first-section {
     background-image: url('assets/header-desktop.png');
     height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .menu-desktop {
@@ -536,7 +539,7 @@ a .btn-two {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-bottom: 100px;
+    padding: 100px 160px;
   }
 
   .section-about {
