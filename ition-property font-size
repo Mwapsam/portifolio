@@ -1,0 +1,95 @@
+[33mcommit ca45d17dba031ddc6f2fe59e71af0e9beb076d6f[m[33m ([m[1;36mHEAD -> [m[1;32mfooter-mobile[m[33m, [m[1;31morigin/footer-mobile[m[33m)[m
+Merge: 28d67d9 9affbb7
+Author: Samuel Mwape <43408618+Mwapsam@users.noreply.github.com>
+Date:   Tue Nov 30 07:16:37 2021 +0200
+
+    Merge pull request #2 from Mwapsam/full-mobile
+    
+    Full mobile
+
+[33mcommit 9affbb7d6f34d142cd728ecf391335b705f49aa8[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Sat Nov 27 11:48:28 2021 +0200
+
+    modify styles
+
+[33mcommit 9631f25cbb5203cb28f2f5bdac8c326d4fab2b0a[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Sat Nov 27 10:43:46 2021 +0200
+
+    modify styles and html
+
+[33mcommit 5160dfcdf811910459a4d5b387efa5501cf12e68[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Fri Nov 26 23:59:58 2021 +0200
+
+    Update html and css
+
+[33mcommit 28d67d955b8847e5db79d83c954b675db9c49eae[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 6ef5f83 029a05a
+Author: Samuel Mwape <43408618+Mwapsam@users.noreply.github.com>
+Date:   Thu Nov 25 13:56:14 2021 +0200
+
+    Merge pull request #1 from Mwapsam/setup
+    
+    Setup
+
+[33mcommit 029a05aa3a0de7df5f0a5c6ff08651801977f37f[m[33m ([m[1;31morigin/setup[m[33m, [m[1;32msetup[m[33m)[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Thu Nov 25 13:17:25 2021 +0200
+
+    Update html
+
+[33mcommit 1d3d5014708d59d45999f0e10e0945051b5fe377[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Thu Nov 25 11:54:03 2021 +0200
+
+    Correct html tags
+
+[33mcommit 946e85ee9c9ec0e7bc5748b46c5ed056022e3115[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Thu Nov 25 11:22:55 2021 +0200
+
+    Fix linter errors
+
+[33mcommit 9a86b0275794f43bd87802d1cb86841a70f2ab1b[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Thu Nov 25 11:20:06 2021 +0200
+
+    Change screenshot
+
+[33mcommit 11dfad6fd54f69fee64c9bc6c48cbce17563bf05[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Thu Nov 25 09:13:34 2021 +0200
+
+    Fix linter errors
+
+[33mcommit e9811405465d819176fd0dd5be783ae54faf9f69[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Thu Nov 25 09:09:48 2021 +0200
+
+    Add new header.png and modify styles
+
+[33mcommit f086934aafbd7f7da137e5a06c704752ce418619[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Wed Nov 24 22:56:10 2021 +0200
+
+    update readme
+
+[33mcommit 3d0fbbbea58b397ca3880aed806d0ffb2012ff71[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Wed Nov 24 22:25:39 2021 +0200
+
+    update styles and linter config
+
+[33mcommit caf386bd8a9da5c0bfd2306beec10ccb227c3b7b[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Wed Nov 24 16:46:13 2021 +0200
+
+    add html and linter configuration
+
+[33mcommit 6ef5f83291e194fa6e61bf0d67450f3c6981e3f9[m
+Author: Mwapsam <mwapsam@gmail.com>
+Date:   Wed Nov 24 11:39:13 2021 +0200
+
+    first commit
