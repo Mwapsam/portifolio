@@ -468,11 +468,13 @@ a .btn-two {
   }
 
   .first-section {
-    background-image: url('assets/header-desktop.png');
-    height: 100%;
+    background-image: url('assets/header-image.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 112vh;
+    flex: 100%;
+    max-width: 100%;
   }
 
   .menu-desktop {
@@ -635,11 +637,11 @@ a .btn-two {
     color: #091e42;
     width: 50%;
     align-items: center;
-    margin: 12px;
+    margin: 125px 0 12px 0;
   }
 
   .paragraph1 {
-    max-width: 120%;
+    max-width: 85%;
     font-size: 20px;
     line-height: 28px;
     color: #344563;
