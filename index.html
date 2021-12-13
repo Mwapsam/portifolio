@@ -20,10 +20,15 @@
     />
     <link rel="stylesheet" href="main.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPWHMJ2F30"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BPWHMJ2F30"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-BPWHMJ2F30');
@@ -34,11 +39,10 @@
   <body>
     <header class="white">
       <a class="logo" href="#">My logo</a>
-      <nav class="nav-bar">
-        <button id="menu-icon" class="menu"></button>
-        <span class="material-icons common-color span-icon span-item"
-          >dehaze</span>
-      </nav>
+      <button class="hamburger" type="button">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
       <nav class="menu-desktop">
         <ul>
           <li><a href="#">Portfolio</a></li>
@@ -47,13 +51,12 @@
         </ul>
       </nav>
       <!--nav elements mobile-->
-    
-        <ul class="mobile-menu" id="mobile-menu">
-          <li class="nav-list"><a href="#">Portfolio</a></li>
-          <li class="nav-list"><a href="#about-myself">About</a></li>
-          <li class="nav-list"><a href="#contacts">Contact</a></li>
-        </ul>
 
+      <ul class="menu">
+        <li><a class="menuItem" href="#">Portfolio</a></li>
+        <li><a class="menuItem" href="#">About</a></li>
+        <li><a class="menuItem" href="#">Contact</a></li>
+      </ul>
     </header>
     <main>
       <section class="first-section">
