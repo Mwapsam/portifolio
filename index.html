@@ -19,30 +19,305 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
-    <title>My Portifolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPWHMJ2F30"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BPWHMJ2F30');
+    </script>
+    <title>My Portfolio</title>
   </head>
+
   <body>
-    <header>
-      <div>
-        <h2><a class="logo common-color" href="#">SMC</a></h2>
-      </div>
-      <nav class="menu">
-        <span class="material-icons common-color">dehaze</span>
+    <header class="white">
+      <a class="logo" href="#">My logo</a>
+      <nav class="nav-bar">
+        <span class="material-icons common-color span-icon span-item"
+          >dehaze</span
+        >
+      </nav>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section class="main-content">
-        <div class="container">
-          <h1 class="intro-text">I’m Mwape Glad to see you!</h1>
-          <p class="intro-text-2">
+      <section class="first-section">
+        <div class="text">
+          <h1 class="salutation">I'm Mwape,<br />Glad to see you!</h1>
+          <p class="paragraph1">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hestiate to
             contact me.
           </p>
-          <div class="connect">
-            <p class="icons-text common-color">LET’S CONNECT</p>
-            <ul class="social-icons">
+
+          <h3 class="lets-connect">LET'S CONNECT</h3>
+
+          <ul class="social-media">
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angellist" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="work-section">
+        <div class="project-card desktop">
+          <div class="mobile-image">
+            <img src="assets/photo1.png" alt="First Card" />
+          </div>
+          <div class="desktop-image">
+            <img src="assets/photo1dt.png" alt="First card-desktop" />
+          </div>
+
+          <div class="contents-two">
+            <h2 class="head">Tonic</h2>
+            <h4 class="desktop_show">Tonic</h4>
+            <div class="card-detail-box">
+              <ul class="cards-container">
+                <li class="card-detail canopy">CANOPY</li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+                <li class="card-detail dcanopy2_face">CANOPY</li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+              </ul>
+
+              <p class="instruction">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <p class="instruction-show">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+
+              <div class="language1 inline">
+                <ul>
+                  <li class="langu">html</li>
+                  <li class="langu">css</li>
+                  <li class="langu">javascript</li>
+                  <li class="langu2">html</li>
+                  <li class="langu2">css</li>
+                  <li class="langu2">javascript</li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn-one">See project</button>
+          </div>
+        </div>
+        <div class="project-card card-flex">
+          <div class="mobile-image">
+            <img src="assets/photo2.png" alt="Second Card" />
+          </div>
+          <div class="desktop-image">
+            <img src="assets/photo2dt.png" alt="second card-desktop" />
+          </div>
+          <div class="contents">
+            <h2 class="head">Multi-post Stories</h2>
+            <h4 class="desktop_show">Multi-post Stories</h4>
+            <div class="card-detail-box">
+              <ul class="cards-container">
+                <li class="card-detail canopy">CANOPY</li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+                <li class="card-detail dcanopy2_facebook">FACEBOOK</li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+              </ul>
+
+              <p class="instruction">
+                A daily selection of privtely personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <p class="instruction-show">
+                Experimental content creation features that allows users to add
+                and existing story over the course of a day without spamming
+                their friends.
+              </p>
+              <div class="language1 inline">
+                <ul>
+                  <li class="langu">html</li>
+                  <li class="langu">css</li>
+                  <li class="langu">javascript</li>
+                  <li class="langu2">html</li>
+                  <li class="langu2">Ruby on rails</li>
+                  <li class="langu2">css</li>
+                  <li class="langu2">javascript</li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn-one">See project</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="mobile-image">
+            <img src="assets/photo3.png" alt="Third Card" />
+          </div>
+          <div class="desktop-image">
+            <img src="assets/photo3dt.png" alt="third card-desktop" />
+          </div>
+          <div class="contents-two">
+            <h2 class="head">Tonic</h2>
+            <h4 class="desktop_show">FACEBOOK 360</h4>
+            <div class="card-detail-box">
+              <ul class="cards-container">
+                <li class="card-detail canopy">CANOPY</li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+                <li class="card-detail dcanopy2_facebook">FACEBOOK</li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Full Stack Dev
+                </li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+              </ul>
+
+              <p class="instruction">
+                A daily selection of privtely personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <p class="instruction-show">
+                Exploring the future of media in Facebook"s first Virtual
+                Reality app: a place to discover and enjoy 360 photos and videos
+                on Gear VR.
+              </p>
+              <div class="language1 inline">
+                <ul>
+                  <li class="langu">html</li>
+                  <li class="langu">css</li>
+                  <li class="langu">javascript</li>
+                  <li class="langu2">html</li>
+                  <li class="langu2">Ruby on rails</li>
+                  <li class="langu2">css</li>
+                  <li class="langu2">javascript</li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn-one">See project</button>
+          </div>
+        </div>
+
+        <div class="project-card card-flex">
+          <div class="mobile-image">
+            <img src="assets/photo4.png" alt="Forth Card" />
+          </div>
+          <div class="desktop-image">
+            <img src="assets/photo4dt.png" alt="forth card-desktop" />
+          </div>
+          <div class="contents">
+            <h2 class="head">Multi-post Stories</h2>
+            <h4 class="desktop_show">Uber Navigation</h4>
+            <div class="card-detail-box">
+              <ul class="cards-container">
+                <li class="card-detail canopy">CANOPY</li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail option">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+                <li class="card-detail dcanopy2_facebook uber">Uber</li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Lead Developer
+                </li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2018
+                </li>
+              </ul>
+              <p class="instruction">
+                A daily selection of privtely personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <p class="instruction-show">
+                A smart assistant to make driving mode safe, efficient, and fun
+                by unlocking your most expensive computer: your car.
+              </p>
+              <div class="language1 inline">
+                <ul>
+                  <li class="langu">html</li>
+                  <li class="langu">css</li>
+                  <li class="langu">javascript</li>
+                  <li class="langu2">html</li>
+                  <li class="langu2">Ruby on rails</li>
+                  <li class="langu2">css</li>
+                  <li class="langu2">javascript</li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn-one">See project</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="about-myself">
+        <div class="about-grid">
+          <div class="headline-text">
+            <h1>About Myself</h1>
+
+            <p class="paragraph1 para-about">
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <h3 class="lets-connect">LET'S CONNECT</h3>
+
+            <ul class="social-media getmyr">
               <li>
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               </li>
@@ -63,225 +338,86 @@
                 ></a>
               </li>
             </ul>
+            <br />
+            <button class="btn-one btn-resume" type="button">
+              Get My Resume
+            </button>
           </div>
-        </div>
-      </section>
-      <section class="projects">
-        <div class="project-card">
-          <div class="screenshot-project">
-            <img src="assets/worker.png" alt="" />
-          </div>
-          <h2 class="works-text">Tonic</h2>
-          <ul class="about-me-btns">
-            <li class="block-text">CANOPY</li>
-            <li class="dot"></li>
-            <li class="light-text common">Back End Dev</li>
-            <li class="dot"></li>
-            <li class="light-text common">2021</li>
-          </ul>
-
-          <p class="decription-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="tech-list">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>JavaScript</span></li>
-          </ul>
-          <button class="see-project" type="button">See Project</button>
-        </div>
-      </section>
-      <section class="projects">
-        <div class="project-card">
-          <div class="screenshot-project">
-            <img src="assets/project.png" alt="" />
-          </div>
-          <h2 class="works-text">Multi-Post Stories</h2>
-          <ul class="about-me-btns">
-            <li class="block-text">CANOPY</li>
-            <li class="dot"></li>
-            <li class="light-text common">Back End Dev</li>
-            <li class="dot"></li>
-            <li class="light-text common">2021</li>
-          </ul>
-
-          <p class="decription-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="tech-list">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>JavaScript</span></li>
-          </ul>
-          <button class="see-project" type="button">See Project</button>
-        </div>
-      </section>
-      <section class="projects">
-        <div class="project-card">
-          <div class="screenshot-project">
-            <img src="assets/project1.png" alt="" />
-          </div>
-          <h2 class="works-text">Tonic</h2>
-          <ul class="about-me-btns">
-            <li class="block-text">CANOPY</li>
-            <li class="dot"></li>
-            <li class="light-text commons">Back End Dev</li>
-            <li class="dot"></li>
-            <li class="light-text commons">2021</li>
-          </ul>
-
-          <p class="decription-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="tech-list">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>JavaScript</span></li>
-          </ul>
-          <button class="see-project" type="button">See Project</button>
-        </div>
-      </section>
-      <section class="projects">
-        <div class="project-card">
-          <div class="screenshot-project">
-            <img src="assets/project2.png" alt="" />
-          </div>
-          <h2 class="works-text">Multi-Post Stories</h2>
-          <ul class="about-me-btns">
-            <li class="block-text">CANOPY</li>
-            <li class="dot"></li>
-            <li class="light-text">Back End Dev</li>
-            <li class="dot"></li>
-            <li class="light-text">2021</li>
-          </ul>
-
-          <p class="decription-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="tech-list">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>JavaScript</span></li>
-          </ul>
-          <button class="see-project" type="button">See Project</button>
-        </div>
-      </section>
-      <section class="about-me-card">
-        <div class="container">
-          <h1 class="intro-text">About Myself!</h1>
-          <p class="intro-text-2">
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
-          </p>
-          <div class="connect">
-            <p class="icons-text common-color">LET’S CONNECT</p>
-            <ul class="social-icons">
-              <li>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <div class="skills-section">
+            <div class="lang lang-2">
+              <h3 class="lang-font">Languages</h3>
+              <a href="#"
+                ><img class="icons" src="assets/down-arrow.png" alt="arrow"
+              /></a>
+            </div>
+            <ul class="langlist">
+              <li class="language">
+                <img src="assets/jscript.png" alt="js" />
+                <h3 class="lang-text">JavaScript</h3>
               </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-linkedin" aria-hidden="true"></i
-                ></a>
+              <li class="language">
+                <img src="assets/html.png" alt="HTML" />
+                <h3 class="lang-text">HTML</h3>
               </li>
-              <li>
-                <a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-angellist" aria-hidden="true"></i
-                ></a>
+              <li class="language">
+                <img src="assets/css.png" alt="CSS" />
+                <h3 class="lang-text">CSS</h3>
               </li>
             </ul>
-          </div>
-          <button class="see-project" type="button">Get my resume</button>
-          <div class="tech-li">
-            <div class="language-down">
-              <h3 class="list-language">Frameworks</h3>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <div class="lang lang-2 lang3">
+              <h3 class="lang-font">Frameworks</h3>
+              <a href="#"
+                ><img class="icons" src="assets/right-arrow.png" alt="arrow"
+              /></a>
             </div>
-            <ul class="list-of-imgs">
-              <li class="common-stack">
-                <div class="d-flex">
-                  <img class="li-img" src="assets/javascript.png" alt="" />
-                  <p>JavaSript</p>
-                </div>
-              </li>
-              <li class="common-stack">
-                <img class="li-img" src="assets/html.png" alt="" />
-                <p>HTML</p>
-              </li>
-              <li class="common-stack">
-                <img class="li-img" src="assets/css.png" alt="" />
-                <p>CSS</p>
-              </li>
-            </ul>
-            <div class="language-down">
-              <h3 class="list-language">Frameworks</h3>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <div class="lang lang-2 lang3">
+              <h3 class="lang-font">Skills</h3>
+              <a href="#"
+                ><img class="icons" src="assets/right-arrow.png" alt="arrow"
+              /></a>
             </div>
-            <hr />
-            <div class="language-down">
-              <h3 class="list-language">Skills</h3>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-            <hr />
           </div>
         </div>
       </section>
-      <footer>
-        <h2>Contact me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-        <form
-          class="form-items"
-          action="https://formspree.io/f/mwkyeral"
-          method="post"
-        >
-          <label for="fullname"></label>
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            placeholder="Insert full name..."
-            maxlength="30"
-            required
-          />
-          <br />
-          <label for="mail"></label>
-          <input
-            type="email"
-            id="mail"
-            placeholder="Insert e-mail..."
-            name="_email"
-            required
-          />
-          <br />
-          <label for="message"></label>
-          <textarea
-            name="message"
-            id="message"
-            cols="15"
-            rows="5"
-            placeholder="Write your message here..."
-            maxlength="500"
-            required
-          ></textarea>
-          <button type="submit">Get In Touch</button>
-        </form>
-      </footer>
+      <section class="contact-section">
+        <div class="contact-form">
+          <h2 class="con-title">Contact me</h2>
+          <p class="con-paragraph">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form
+            action="https://formspree.io/f/mnqlovzq"
+            method="POST"
+            class="con-form"
+          >
+            <input
+              type="text"
+              name="_name"
+              placeholder="Name"
+              maxlength="30"
+              class="form-text"
+              required
+            />
+            <input
+              type="email"
+              name="_reply"
+              placeholder="Please enter your Email"
+              class="form-text"
+              required
+            />
+            <textarea
+              name="_message"
+              placeholder="Write your message here"
+              maxlength="500"
+              class="form-text message"
+              required
+            ></textarea>
+            <button class="con-but" type="submit">Get in touch</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
