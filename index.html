@@ -20,10 +20,15 @@
     />
     <link rel="stylesheet" href="main.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPWHMJ2F30"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BPWHMJ2F30"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-BPWHMJ2F30');
@@ -34,11 +39,10 @@
   <body>
     <header class="white">
       <a class="logo" href="#">My logo</a>
-      <nav class="nav-bar">
-        <span class="material-icons common-color span-icon span-item"
-          >dehaze</span
-        >
-      </nav>
+      <button class="hamburger" type="button">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
       <nav class="menu-desktop">
         <ul>
           <li><a href="#">Portfolio</a></li>
@@ -46,6 +50,13 @@
           <li><a href="#contacts">Contact</a></li>
         </ul>
       </nav>
+      <!--nav elements mobile-->
+
+      <ul class="menu">
+        <li><a class="menuItem" href="#">Portfolio</a></li>
+        <li><a class="menuItem" href="#">About</a></li>
+        <li><a class="menuItem" href="#">Contact</a></li>
+      </ul>
     </header>
     <main>
       <section class="first-section">
@@ -133,7 +144,65 @@
                 </ul>
               </div>
             </div>
-            <button type="button" class="btn-one">See project</button>
+            <button type="button" class="btn-one" id="myBtn">
+              See project
+            </button>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 class="head">Tonic</h2>
+              <h4 class="desktop_show">Tonic</h4>
+              <ul class="modal-cards-container">
+                <li class="card-detail canopy">CANOPY</li>
+                <li class="card-detail option-modal">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail option-modal">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+                <li class="card-detail dcanopy2_face">CANOPY</li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  Back End Dev
+                </li>
+                <li class="card-detail optiond2_full">
+                  <img src="assets/bullets.png" alt="bullet" class="circle" />
+                  2015
+                </li>
+              </ul>
+              <div class="modalImage">
+                <img src="assets/photo1.png" alt="First Card" />
+              </div>
+              <div class="modalImageDesktop">
+                <img src="assets/photo1dt.png" alt="First card-desktop" />
+              </div>
+              <div class="modalTextWrapper">
+                <p class="modalText">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining essent
+                </p>
+              </div>
+              <ul>
+                <li class="modalLang">html</li>
+                <li class="modalLang">css</li>
+                <li class="modalLang">javascript</li>
+                <li class="langu2">html</li>
+                <li class="langu2">css</li>
+                <li class="langu2">javascript</li>
+              </ul>
+              <div class="modalButtons">
+                <button type="button">See live</button>
+                <button type="button">See Source</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project-card card-flex">
@@ -419,5 +488,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
