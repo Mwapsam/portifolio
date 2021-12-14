@@ -82,6 +82,7 @@ main {
 .social-media li a {
   cursor: pointer;
   text-decoration: none;
+  color: #505f79;
 }
 
 .menu-icon {
@@ -100,7 +101,7 @@ main {
 
 .first-section {
   background-image: url('./assets/background.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   background-color: #fff;
@@ -417,7 +418,9 @@ a .btn-two {
 .form-text {
   border: 1px solid white;
   border-radius: 8px;
-  height: 48px;
+  height: 50px;
+  width: 79%;
+  align-self: center;
   padding: 15px;
   font-family: Poppins, sans-serif;
 }
@@ -462,13 +465,64 @@ a .btn-two {
   display: none;
 }
 
+/* mobile menu */
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 0;
+  border: #fff;
+  background: white;
+  cursor: pointer;
+  color: #6070ff;
+}
+
+.closeIcon {
+  display: none;
+  background: #6070ff;
+  color: #fff;
+}
+
+.menu {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #6070ff;
+  opacity: 0.9;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  padding-left: 2rem;
+}
+
+.menuItem {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
 @media (min-width: 992px) {
   .lang {
     padding-top: 40px;
   }
 
   .first-section {
-    background-image: url('assets/header-image.svg');
+    background-image: url('assets/header-image.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -784,6 +838,10 @@ a .btn-two {
   }
 
   .instruction {
+    display: none;
+  }
+
+  .hamburger {
     display: none;
   }
 }
