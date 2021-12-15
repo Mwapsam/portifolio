@@ -4,6 +4,26 @@ const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 
+function toggleMenu() {
+  if (menu.classList.contains('showMenu')) {
+    menu.classList.remove('showMenu');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+  } else {
+    menu.classList.add('showMenu');
+    closeIcon.style.display = 'block';
+    menuIcon.style.display = 'none';
+  }
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', toggleMenu);
+});
+
+// Modal Popup
+
 const projects = [
   {
     name: 'Tonic',
@@ -36,11 +56,11 @@ const projects = [
     bigDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     imageUrlMobile: 'assets/photo2.png',
-    imageUrlDesktop: 'assets/photo2dt.png',
+    imageUrlDesktop: 'assets/modalDesktop3.png',
     technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
     technologies: ['html', 'css', 'javaScript'],
     popupImageUrlMobile: 'assets/photo2.png',
-    popupImageUrlDesktop: 'assets/photo2dt.png',
+    popupImageUrlDesktop: 'assets/modalDesktop3.png',
     linkLive: '',
     linkSource: '',
   },
@@ -52,11 +72,11 @@ const projects = [
     bigDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     imageUrlMobile: 'assets/photo3.png',
-    imageUrlDesktop: 'assets/photo3dt.png',
+    imageUrlDesktop: 'assets/modalDesktop.png',
     technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     popupImageUrlMobile: 'assets/photo3.png',
-    popupImageUrlDesktop: 'assets/photo3dt.png',
+    popupImageUrlDesktop: 'assets/modalDesktop.png',
     linkLive: '',
     linkSource: '',
   },
@@ -66,13 +86,13 @@ const projects = [
     smallDescription:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     bigDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
     imageUrlMobile: 'assets/photo4.png',
-    imageUrlDesktop: 'assets/photo4dt.png',
+    imageUrlDesktop: 'assets/modalDeskto2.png',
     technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     popupImageUrlMobile: 'assets/images/photo4.png',
-    popupImageUrlDesktop: 'assets/photo4dt.png',
+    popupImageUrlDesktop: 'assets/modalDeskto2.png',
     linkLive: '',
     linkSource: '',
   },
@@ -91,6 +111,7 @@ function popup(projectIndex) {
   g('mImage', true).src = project.imageUrlMobile;
   g('mImageDsk', true).src = project.popupImageUrlDesktop;
   g('modalText', true).innerText = project.bigDescription;
+  g('modalTextMobile', true).innerText = project.smallDescription;
   g('myModal').style.display = 'block';
 }
 
@@ -139,7 +160,7 @@ function init() {
           <p class="instruction-show">${project.smallDescription}</p>
 
           <div class="language1 inline">
-            <ul>${unescape(technologies.join(''))}</ul>
+            <ul> ${unescape(technologies.join(''))}</ul>
           </div>
         </div>
         <button type="button" class="btn-one see-project" onclick="popup(${k})">
@@ -152,25 +173,6 @@ function init() {
   }
 }
 
-function toggleMenu() {
-  if (menu.classList.contains('showMenu')) {
-    menu.classList.remove('showMenu');
-    closeIcon.style.display = 'none';
-    menuIcon.style.display = 'block';
-  } else {
-    menu.classList.add('showMenu');
-    closeIcon.style.display = 'block';
-    menuIcon.style.display = 'none';
-  }
-}
-
-hamburger.addEventListener('click', toggleMenu);
-
-menuItems.forEach((menuItem) => {
-  menuItem.addEventListener('click', toggleMenu);
-});
-
-// the modal
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 

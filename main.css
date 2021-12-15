@@ -142,7 +142,7 @@ main {
   color: #172b4d;
   font-weight: bold;
   line-height: 44px;
-  font-size: 45px;
+  font-size: 34px;
   font-family: poppins, sans-serif;
   margin-left: 16px;
   padding-top: 12px;
@@ -165,13 +165,14 @@ main {
 
 .langu {
   background-color: #ebebff;
-  padding: 10px;
+  padding: 6px 14px;
   color: #4472e7;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 500;
   font-family: poppins, sans-serif;
   display: inline-block;
-  margin-left: 21px;
+  margin: 10px 20px 10px 0;
+  font-size: 12px;
 }
 
 .circle {
@@ -544,7 +545,7 @@ a .btn-two {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -567,6 +568,10 @@ a .btn-two {
 }
 
 .modalText {
+  display: none;
+}
+
+.modalTextMobile {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -622,7 +627,7 @@ a .btn-two {
   color: #172b4d;
   font-weight: bold;
   line-height: 44px;
-  font-size: 45px;
+  font-size: 32px;
   font-family: poppins, sans-serif;
   margin-left: 0;
   padding-top: 12px;
@@ -632,6 +637,12 @@ a .btn-two {
 .MidModalItems {
   display: flex;
   flex-direction: column;
+}
+
+.language1 {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
 }
 
 @media (min-width: 992px) {
@@ -656,15 +667,21 @@ a .btn-two {
   .modalFlex {
     display: flex;
     flex-direction: column;
+    margin-left: 22px;
   }
 
   .modalText {
+    display: block;
     color: #344563;
     width: 65%;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     margin: 0;
+  }
+
+  .modalTextMobile {
+    display: none;
   }
 
   .LangInModal {
@@ -681,7 +698,7 @@ a .btn-two {
   }
 
   .modalButtons {
-    margin-left: 0px;
+    margin-left: 0;
     justify-content: start;
   }
 
@@ -959,23 +976,32 @@ a .btn-two {
 
   .langu2 {
     background-color: #ebebff;
-    padding: 10px 20px;
+    padding: 6px 14px;
     color: #4472e7;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: 500;
     font-family: poppins, sans-serif;
     display: inline-block;
     margin: 10px 20px 10px 0;
+    font-size: 12px;
   }
 
   .langu {
-    display: none;
+    background-color: #ebebff;
+    padding: 6px 14px;
+    color: #4472e7;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+    font-size: 12px;
   }
 
   .cards-container {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 10px 0 23px 0;
   }
 
   .dcanopy2_facebook {
