@@ -174,10 +174,10 @@ function init() {
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 
-// eslint-disable-next-line func-names
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = 'none';
 };
+
 
 window.onclick = function (event) {
   if (event.target === modal) {
