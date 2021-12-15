@@ -105,6 +105,7 @@ function g(e, isClass = false) {
   return document.getElementById(e);
 }
 
+// eslint-disable-next-line no-unused-vars
 function popup(projectIndex) {
   const project = projects[projectIndex];
   g('t').innerText = project.name;
@@ -120,7 +121,7 @@ function init() {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`
+      (t) => `<li class="langu">${t}</li>`,
     );
 
     template.innerHTML = `<div class="project-card desktop">
@@ -130,7 +131,6 @@ function init() {
       <div class="desktop-image">
         <img src="${project.imageUrlDesktop}" alt="First card-desktop" />
       </div>
-
       <div class="contents-two">
         <h2 class="head">${project.name}</h2>
         <h4 class="desktop_show">${project.name}</h4>
@@ -155,10 +155,8 @@ function init() {
               2015
             </li>
           </ul>
-
           <p class="instruction">${project.smallDescription}</p>
           <p class="instruction-show">${project.smallDescription}</p>
-
           <div class="language1 inline">
             <ul> ${unescape(technologies.join(''))}</ul>
           </div>
@@ -176,7 +174,8 @@ function init() {
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 
-span.onclick = function () {
+// eslint-disable-next-line func-names
+span.onclick = function() {
   modal.style.display = 'none';
 };
 
