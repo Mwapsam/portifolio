@@ -24,12 +24,14 @@ menuItems.forEach((menuItem) => {
 
 // the modal
 const modal = document.getElementById('myModal');
-
-const btn = document.getElementById('myBtn');
+const btn = document.querySelectorAll('.see-project');
 const span = document.getElementsByClassName('close')[0];
-btn.onclick = function () {
-  modal.style.display = 'block';
-};
+
+btn.forEach((btns) => {
+  btns.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+});
 
 span.onclick = function () {
   modal.style.display = 'none';

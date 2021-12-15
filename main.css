@@ -520,7 +520,7 @@ a .btn-two {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 35px;
   left: 0;
   top: 0;
   width: 100%;
@@ -561,7 +561,7 @@ a .btn-two {
   width: 100%;
 }
 
-.modalImageDesktop {
+.modalImageDesktop img {
   display: none;
 }
 
@@ -602,6 +602,24 @@ a .btn-two {
 .modalButtons {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 12px;
+}
+
+.TopModalItems h2 {
+  color: #172b4d;
+  font-weight: bold;
+  line-height: 44px;
+  font-size: 45px;
+  font-family: poppins, sans-serif;
+  margin-left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.MidModalItems {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 992px) {
@@ -615,6 +633,37 @@ a .btn-two {
 
   .modalImageDesktop img {
     width: 100%;
+    display: block;
+  }
+
+  .modalTextWrapper {
+    display: flex;
+  }
+
+  .modalFlex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modalText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin: 9px 6px;
+    width: 65%;
+  }
+
+  .LangInModal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LangInModal2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .first-section {
@@ -748,6 +797,11 @@ a .btn-two {
     height: min-content;
     gap: 75px;
     margin: 90px 0;
+  }
+
+  .modalImageDesktop img {
+    width: 100%;
+    display: block;
   }
 
   .modalLang {
