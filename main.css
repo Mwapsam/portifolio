@@ -559,6 +559,7 @@ a .btn-two {
 
 .modalImage img {
   width: 100%;
+  margin-top: 30px;
 }
 
 .modalImageDesktop img {
@@ -576,13 +577,13 @@ a .btn-two {
 
 .modalLang {
   background-color: #ebebff;
-  padding: 10px;
+  padding: 5px 15px;
   color: #4472e7;
   border-radius: 10px;
   font-weight: 500;
   font-family: poppins, sans-serif;
   display: inline-block;
-  margin-left: 9px;
+  margin: 0;
 }
 
 .option-modal {
@@ -595,8 +596,18 @@ a .btn-two {
   padding-top: 8px;
 }
 
-.modal-cards-container {
-  margin-bottom: 1rem;
+.modal .canopy,
+.option {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-line {
+  border: none;
+  border-bottom: 1px solid #ebecf0;
+  margin: 20px auto;
 }
 
 .modalButtons {
@@ -604,6 +615,13 @@ a .btn-two {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 12px;
+}
+
+.modalButtons button {
+  border: 1px solid #6070ff;
+  padding: 12px 22px;
+  color: #396df2;
+  font-size: 17px;
 }
 
 .TopModalItems h2 {
@@ -638,6 +656,7 @@ a .btn-two {
 
   .modalTextWrapper {
     display: flex;
+    margin-top: 50px;
   }
 
   .modalFlex {
@@ -646,24 +665,35 @@ a .btn-two {
   }
 
   .modalText {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
     color: #344563;
-    margin: 9px 6px;
     width: 65%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin:0;
   }
 
   .LangInModal {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
   }
 
   .LangInModal2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 0;
+  }
+
+  .modalButtons {
+    margin-left: 0px;
+    justify-content: start;
+  }
+
+  .modalButtons button {
+    margin: 0 10px;
+    padding: 5px 20px;
   }
 
   .first-section {
@@ -935,13 +965,17 @@ a .btn-two {
 
   .langu2 {
     background-color: #ebebff;
-    padding: 10px;
+    padding: 10px 20px;
     color: #4472e7;
     border-radius: 10px;
     font-weight: 500;
     font-family: poppins, sans-serif;
     display: inline-block;
-    margin-right: 20px;
+    margin: 10px 20px 10px 0;
+  }
+
+  .modile-line {
+    border: 3px solid black;
   }
 
   .langu {
