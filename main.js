@@ -105,7 +105,6 @@ function g(e, isClass = false) {
   return document.getElementById(e);
 }
 
-// eslint-disable-next-line no-unused-vars
 function popup(projectIndex) {
   const project = projects[projectIndex];
   g('t').innerText = project.name;
@@ -177,7 +176,6 @@ const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
 };
-
 
 window.onclick = function (event) {
   if (event.target === modal) {
