@@ -105,6 +105,7 @@ function g(e, isClass = false) {
   return document.getElementById(e);
 }
 
+// eslint-disable-next-line no-unused-vars
 function popup(projectIndex) {
   const project = projects[projectIndex];
   g('t').innerText = project.name;
