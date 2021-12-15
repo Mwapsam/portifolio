@@ -4,6 +4,154 @@ const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 
+const projects = [
+  {
+    name: 'Tonic',
+    details: ['CANOPY', 'Back End Dev', '2015'],
+    smallDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: 'assets/photo1.png',
+    imageUrlDesktop: 'assets/photo1dt.png',
+    popupImageUrlMobile: 'assets/photo1.png',
+    popupImageUrlDesktop: 'assets/mydesktop.png',
+    technologiesPopup: [
+      'html',
+      'css',
+      'javaScript',
+      'github',
+      'Ruby',
+      'Bootstrap',
+    ],
+    technologies: ['html', 'css', 'javaScript'],
+    linkLive: '',
+    linkSource: '',
+  },
+  {
+    name: 'Multi-Post Stories',
+    details: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    smallDescription:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: 'assets/photo2.png',
+    imageUrlDesktop: 'assets/photo2dt.png',
+    technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
+    popupImageUrlMobile: 'assets/photo2.png',
+    popupImageUrlDesktop: 'assets/photo2dt.png',
+    linkLive: '',
+    linkSource: '',
+  },
+  {
+    name: 'Facebook 360',
+    details: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    smallDescription:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: 'assets/photo3.png',
+    imageUrlDesktop: 'assets/photo3dt.png',
+    technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    popupImageUrlMobile: 'assets/photo3.png',
+    popupImageUrlDesktop: 'assets/photo3dt.png',
+    linkLive: '',
+    linkSource: '',
+  },
+  {
+    name: 'Uber navigation',
+    details: ['Uber', 'Lead developer', '2018'],
+    smallDescription:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: 'assets/photo4.png',
+    imageUrlDesktop: 'assets/photo4dt.png',
+    technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    popupImageUrlMobile: 'assets/images/photo4.png',
+    popupImageUrlDesktop: 'assets/photo4dt.png',
+    linkLive: '',
+    linkSource: '',
+  },
+];
+
+function g(e, isClass = false) {
+  if (isClass) {
+    return document.getElementsByClassName(e)[0];
+  }
+  return document.getElementById(e);
+}
+
+function popup(projectIndex) {
+  const project = projects[projectIndex];
+  g('t').innerText = project.name;
+  g('mImage', true).src = project.imageUrlMobile;
+  g('mImageDsk', true).src = project.popupImageUrlDesktop;
+  g('modalText', true).innerText = project.bigDescription;
+  g('myModal').style.display = 'block';
+}
+
+function init() {
+  for (let k = 0; k < projects.length; k += 1) {
+    const project = projects[k];
+    const template = document.createElement('template');
+    const technologies = project.technologies.map(
+      (t) => `<li class="langu">${t}</li>`
+    );
+
+    template.innerHTML = `<div class="project-card desktop">
+      <div class="mobile-image">
+        <img src="${project.imageUrlMobile}" alt="First Card" />
+      </div>
+      <div class="desktop-image">
+        <img src="${project.imageUrlDesktop}" alt="First card-desktop" />
+      </div>
+
+      <div class="contents-two">
+        <h2 class="head">${project.name}</h2>
+        <h4 class="desktop_show">${project.name}</h4>
+        <div class="card-detail-box">
+          <ul class="cards-container">
+            <li class="card-detail canopy">CANOPY</li>
+            <li class="card-detail option">
+              <img src="assets/bullets.png" alt="bullet" class="circle" />
+              Back End Dev
+            </li>
+            <li class="card-detail option">
+              <img src="assets/bullets.png" alt="bullet" class="circle" />
+              2015
+            </li>
+            <li class="card-detail dcanopy2_face">CANOPY</li>
+            <li class="card-detail optiond2_full">
+              <img src="assets/bullets.png" alt="bullet" class="circle" />
+              Back End Dev
+            </li>
+            <li class="card-detail optiond2_full">
+              <img src="assets/bullets.png" alt="bullet" class="circle" />
+              2015
+            </li>
+          </ul>
+
+          <p class="instruction">${project.smallDescription}</p>
+          <p class="instruction-show">${project.smallDescription}</p>
+
+          <div class="language1 inline">
+            <ul>${unescape(technologies.join(''))}</ul>
+          </div>
+        </div>
+        <button type="button" class="btn-one see-project" onclick="popup(${k})">
+          See project
+        </button>
+      </div>
+    </div>`;
+
+    g('projects').appendChild(template.content.firstChild);
+  }
+}
+
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
@@ -24,14 +172,7 @@ menuItems.forEach((menuItem) => {
 
 // the modal
 const modal = document.getElementById('myModal');
-const btn = document.querySelectorAll('.see-project');
 const span = document.getElementsByClassName('close')[0];
-
-btn.forEach((btns) => {
-  btns.addEventListener('click', () => {
-    modal.style.display = 'block';
-  });
-});
 
 span.onclick = function () {
   modal.style.display = 'none';
@@ -42,3 +183,5 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+window.onload = init();
