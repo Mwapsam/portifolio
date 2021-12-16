@@ -121,7 +121,7 @@ function init() {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`,
+      (t) => `<li class="langu">${t}</li>`
     );
 
     template.innerHTML = `<div class="project-card desktop">
@@ -185,3 +185,25 @@ window.onclick = function (event) {
 };
 
 window.onload = init();
+
+// Form Validation
+
+const errorMessage = document.querySelector('.error-message');
+const form = document.querySelector('.contact-form');
+const formElement = form.querySelectorAll('input, textarea');
+
+formElement.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    errorMessage.style.display = 'none';
+  });
+});
+
+document.getElementById('submit').addEventListener('click', (e) => {
+  const email = document.getElementById('email').value;
+  const emailValidation = /[A-Z]/.test(email);
+
+  if (emailValidation) {
+    errorMessage.style.display = 'block';
+    e.preventDefault();
+  }
+});
