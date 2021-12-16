@@ -427,7 +427,6 @@ a .btn-two {
 }
 
 .con-but {
-  justify-content: start;
   width: 140px;
   height: 48px;
   padding: 10px;
@@ -437,6 +436,9 @@ a .btn-two {
   font-size: 17px;
   font-weight: 500;
   color: #4472e7;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .message {
@@ -645,6 +647,15 @@ a .btn-two {
   margin-left: 20px;
 }
 
+.error-message {
+  display: none;
+  text-align: center;
+}
+
+.error {
+  color: rgb(126, 22, 22);
+}
+
 @media (min-width: 992px) {
   .lang {
     padding-top: 40px;
@@ -823,6 +834,7 @@ a .btn-two {
     place-self: center;
     width: 140px;
     height: 48px;
+    margin: 1px auto;
   }
 
   .btn-one {

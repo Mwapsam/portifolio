@@ -174,10 +174,12 @@ function init() {
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 
+// eslint-disable-next-line func-names
 span.onclick = function () {
   modal.style.display = 'none';
 };
 
+// eslint-disable-next-line func-names
 window.onclick = function (event) {
   if (event.target === modal) {
     modal.style.display = 'none';
@@ -185,3 +187,25 @@ window.onclick = function (event) {
 };
 
 window.onload = init();
+
+// Form Validation
+
+const errorMessage = document.querySelector('.error-message');
+const form = document.querySelector('.contact-form');
+const formElement = form.querySelectorAll('input, textarea');
+
+formElement.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    errorMessage.style.display = 'none';
+  });
+});
+
+document.getElementById('submit').addEventListener('click', (e) => {
+  const email = document.getElementById('email').value;
+  const emailValidation = /[A-Z]/.test(email);
+
+  if (emailValidation) {
+    errorMessage.style.display = 'block';
+    e.preventDefault();
+  }
+});
