@@ -26,16 +26,16 @@ menuItems.forEach((menuItem) => {
 
 const projects = [
   {
-    name: 'Tonic',
+    name: 'Coin City',
     details: ['CANOPY', 'Back End Dev', '2015'],
     smallDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'Building my first Capstone project to apply the concepts learned in order to enhance my skills in HTML, CSS & JavaScript.',
     bigDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrlMobile: 'assets/photo1.png',
-    imageUrlDesktop: 'assets/photo1dt.png',
-    popupImageUrlMobile: 'assets/photo1.png',
-    popupImageUrlDesktop: 'assets/mydesktop.png',
+      'Building my first Capstone project to apply the concepts learned in order to enhance my skills in HTML, CSS & JavaScript.',
+    imageUrlMobile: 'assets/first-cap.png',
+    imageUrlDesktop: 'assets/first-cap.png',
+    // popupImageUrlMobile: 'assets/first-cap.png',
+    // popupImageUrlDesktop: 'assets/first-cap.png',
     technologiesPopup: [
       'html',
       'css',
@@ -45,56 +45,56 @@ const projects = [
       'Bootstrap',
     ],
     technologies: ['html', 'css', 'javaScript'],
-    linkLive: '',
-    linkSource: '',
+    linkLive: 'https://mwapsam.github.io/capstone-m1/',
+    linkSource: 'https://github.com/Mwapsam/capstone-m1',
   },
   {
-    name: 'Multi-Post Stories',
-    details: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    name: 'Space Travellers',
+    details: ['SPACE-X', 'Full Stack Dev', '2022'],
     smallDescription:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      "This is a Space Travellers' website for making rocket reservations based on SpaceX API. It represents a fictional company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.",
     bigDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrlMobile: 'assets/photo2.png',
-    imageUrlDesktop: 'assets/modalDesktop3.png',
+      "This is a Space Travellers' website for making rocket reservations based on SpaceX API. It represents a fictional company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.",
+    imageUrlMobile: 'assets/space-travellers.png',
+    imageUrlDesktop: 'assets/space-travellers.png',
     technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
     technologies: ['html', 'css', 'javaScript'],
-    popupImageUrlMobile: 'assets/photo2.png',
-    popupImageUrlDesktop: 'assets/modalDesktop3.png',
-    linkLive: '',
-    linkSource: '',
+    // popupImageUrlMobile: 'assets/space-travellers.png',
+    // popupImageUrlDesktop: 'assets/space-travellers.png',
+    linkLive: 'https://space-travellers-hub.herokuapp.com/',
+    linkSource: 'https://github.com/Mwapsam/Space-travellers',
   },
   {
-    name: 'Facebook 360',
+    name: 'Pokemon',
     details: ['FACEBOOK', 'Full Stack Dev', '2015'],
     smallDescription:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      'This project is developed for Pokemon and fight game lovers to see their favorite Pokemon character and make comments on them. This project makes use of Poke API and involvement API to get Pokemon information to be rendered on the screen and to store and retrieve users likes and comments respectively.',
     bigDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrlMobile: 'assets/photo3.png',
-    imageUrlDesktop: 'assets/modalDesktop.png',
+      'This project is developed for Pokemon and fight game lovers to see their favorite Pokemon character and make comments on them. This project makes use of Poke API and involvement API to get Pokemon information to be rendered on the screen and to store and retrieve users likes and comments respectively.',
+    imageUrlMobile: 'assets/pokemon.png',
+    imageUrlDesktop: 'assets/pokemon.png',
     technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    popupImageUrlMobile: 'assets/photo3.png',
-    popupImageUrlDesktop: 'assets/modalDesktop.png',
-    linkLive: '',
-    linkSource: '',
+    // popupImageUrlMobile: 'assets/pokemon.png',
+    // popupImageUrlDesktop: 'assets/pokemon.png',
+    linkLive: 'https://ginohmk.github.io/JavascriptCapstone/',
+    linkSource: 'https://github.com/Ginohmk/JavascriptCapstone',
   },
   {
-    name: 'Uber navigation',
+    name: 'Bookstore',
     details: ['Uber', 'Lead developer', '2018'],
     smallDescription:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'The Bookstore website manages the inventory of books by allowing users to display a list of books, add books and remove books from the store.',
     bigDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    imageUrlMobile: 'assets/photo4.png',
-    imageUrlDesktop: 'assets/modalDeskto2.png',
+      'The Bookstore website manages the inventory of books by allowing users to display a list of books, add books and remove books from the store.',
+    imageUrlMobile: 'assets/bookstore.png',
+    imageUrlDesktop: 'assets/bookstore.png',
     technologiesPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    popupImageUrlMobile: 'assets/images/photo4.png',
-    popupImageUrlDesktop: 'assets/modalDeskto2.png',
-    linkLive: '',
-    linkSource: '',
+    // popupImageUrlMobile: 'assets/bookstore.png',
+    // popupImageUrlDesktop: 'assets/bookstore.png',
+    linkLive: 'https://bookstore-js.herokuapp.com/',
+    linkSource: 'https://github.com/Mwapsam/Bookstore',
   },
 ];
 
@@ -114,6 +114,8 @@ function popup(projectIndex) {
   g('modalText', true).innerText = project.bigDescription;
   g('modalTextMobile', true).innerText = project.smallDescription;
   g('myModal').style.display = 'block';
+  g('git', true).href = project.linkLive;
+  g('hero', true).href = project.linkSource;
 }
 
 function init() {
@@ -121,17 +123,26 @@ function init() {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`,
+      (t) => `<li class="langu">${t}</li>`
     );
 
+    let flexStart = 'start';
+    let flexEnd = 'end';
+    if (k % 2 !== 0) {
+      flexStart = 'end';
+      flexEnd = 'start';
+    }
+
     template.innerHTML = `<div class="project-card desktop">
+    <div class="content1 ${flexStart}">
       <div class="mobile-image">
         <img src="${project.imageUrlMobile}" alt="First Card" />
       </div>
       <div class="desktop-image">
         <img src="${project.imageUrlDesktop}" alt="First card-desktop" />
       </div>
-      <div class="contents-two">
+      </div>
+      <div class="contents-two ${flexEnd}">
         <h2 class="head">${project.name}</h2>
         <h4 class="desktop_show">${project.name}</h4>
         <div class="card-detail-box">
@@ -139,20 +150,20 @@ function init() {
             <li class="card-detail canopy">CANOPY</li>
             <li class="card-detail option">
               <img src="assets/bullets.png" alt="bullet" class="circle" />
-              Back End Dev
+              Front End Dev
             </li>
             <li class="card-detail option">
               <img src="assets/bullets.png" alt="bullet" class="circle" />
-              2015
+              2022
             </li>
-            <li class="card-detail dcanopy2_face">CANOPY</li>
+            <li class="card-detail dcanopy2_face">PROJECT</li>
             <li class="card-detail optiond2_full">
               <img src="assets/bullets.png" alt="bullet" class="circle" />
-              Back End Dev
+              Front End Dev
             </li>
             <li class="card-detail optiond2_full">
               <img src="assets/bullets.png" alt="bullet" class="circle" />
-              2015
+              2022
             </li>
           </ul>
           <p class="instruction">${project.smallDescription}</p>
