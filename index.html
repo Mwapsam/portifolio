@@ -1,334 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-BPWHMJ2F30"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
 
-      gtag('config', 'G-BPWHMJ2F30');
-    </script>
-    <title>My Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mwape's Portfolio</title>
+</head>
 
-  <body>
-    <header class="white">
-      <a class="logo" href="#">My logo</a>
-      <button class="hamburger" type="button">
-        <i class="menuIcon material-icons">menu</i>
-        <i class="closeIcon material-icons">close</i>
-      </button>
-      <nav class="menu-desktop">
-        <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#about-myself">About</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
-      <!--nav elements mobile-->
-
-      <ul class="menu">
-        <li><a class="menuItem" href="#">Portfolio</a></li>
-        <li><a class="menuItem" href="#">About</a></li>
-        <li><a class="menuItem" href="#">Contact</a></li>
+<body>
+  <header class="white">
+    <a class="logo" href="#">Mwape</a>
+    <nav class="nav-bar">
+      <a class="bars" href="#"><img src="images/menu.png" alt="menu navbar"></a>
+    </nav>
+    <nav class="menu-desktop">
+      <ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#about-myself">About</a></li>
+        <li><a href="#contacts">Contact</a></li>
       </ul>
-    </header>
-    <main>
-      <section class="first-section">
-        <div class="text">
-          <h1 class="salutation">I'm Mwape,<br />Glad to see you!</h1>
-          <p class="paragraph1">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
-          </p>
+    </nav>
+  </header>
+  <section class="sidebar">
+    <img src="/images/cancel.png" alt="close" class="cancel cancel-styling">
+    <div class="sidebar-menu">
+      <a href="#work" class="anchor-link">Portfolio</a>
+      <a href="#about-myself" class="anchor-link">About</a>
+      <a href="#contacts" class="anchor-link">Contact</a>
+    </div>
+  </section>
+  <section class="modal">
+    <button class="cancels" type="button">&times;</button>
+    <div class="modal-inner">
+    </div>
+  </section>
+  <main>
+    <section class="first-section">
+      <div class="text">
+        <h1 class="salutation">
+          I'm Mwape,<br>Glad to see you!
+        </h1>
+        <p class="paragraph1">I’m a software developer! I can help you build a product , feature or website Look through
+          some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+          contact me.</p>
 
-          <h3 class="lets-connect">LET'S CONNECT</h3>
+        <h3 class="lets-connect"> LET'S CONNECT</h3>
 
-          <ul class="social-media">
-            <li>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-angellist" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="work-section" id="projects"></div>
-
-      <section class="section-about" id="about-myself">
+        <ul class="social-media">
+          <li><a href="http://twitter.com/King_Kaylo1" target="_blank" rel='noopener'><img src="./images/twitter.png" alt="twitter"> </a></li>
+          <li><a href="https://www.linkedin.com/in/kalolo-lemba/" target="_blank" rel='noopener'><img src="./images/Linkedin.png" alt="linkedIn"></a></li>
+          <li><a href="https://medium.com/@kalololemba" target="_blank" rel='noopener'><img src="./images/medium.png" alt="medium"></a></li>
+          <li><a href="https://github.com/KayLemba" target="_blank" rel='noopener'><img src="./images/github.png" alt="github"></a></li>
+          <li><a href="https://angel.co/u/kalolo-chola-lemba" target="_blank" rel='noopener'><img src="./images/angellist.png" alt="angellist"></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="work-section" id="work">
+      
+    </section>
+    <section class="section-about" id="about-myself">
         <div class="about-grid">
-          <div class="headline-text">
-            <h1>About Myself</h1>
+            <div class="headline-text">
+              <h1>About Myself</h1>
 
-            <p class="paragraph1 para-about">
-              Hello I’m a software developer! I can help you build a product ,
-              feature or website Look through some of my work and experience! If
-              you like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-            <h3 class="lets-connect">LET'S CONNECT</h3>
+              <p class="paragraph1 para-about">Hello I’m a software developer! I can help you build a product , feature or website
+                Look through some of my work and experience! If you like what you see and have a
+                project you need coded, don’t hestiate to contact me.</p>
+              <h3 class="lets-connect"> LET'S CONNECT</h3>
 
-            <ul class="social-media getmyr">
-              <li>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-linkedin" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-angellist" aria-hidden="true"></i
-                ></a>
-              </li>
-            </ul>
-            <br />
-            <button class="btn-one btn-resume" type="button">
-              Get My Resume
-            </button>
+              <ul class="social-media getmyr">
+                <li><a href="http://twitter.com/King_Kaylo1" target="_blank" rel='noopener'><img src="./images/twitter.png" alt="twitter"> </a></li>
+                <li><a href="https://www.linkedin.com/in/kalolo-lemba/" target="_blank" rel='noopener'><img src="./images/Linkedin.png" alt="linkedIn"></a></li>
+                <li><a href="https://medium.com/@kalololemba" target="_blank" rel='noopener'><img src="./images/medium.png" alt="medium"></a></li>
+                <li><a href="https://github.com/KayLemba" target="_blank" rel='noopener'><img src="./images/github.png" alt="github"></a></li>
+                <li><a href="https://angel.co/u/kalolo-chola-lemba" target="_blank" rel='noopener'><img src="./images/angellist.png" alt="angellist"></a></li>
+              </ul>
+              <br>
+              <button class="btn-one btn-resume" type="button" onclick="window.open(`https://docs.google.com/document/d/1V67gDOEotnncODgZe_IxwiyVpXqhNq4972UwE-3KuII/edit?usp=sharing`, '_blank')">Get My Resume</button>
           </div>
           <div class="skills-section">
             <div class="lang lang-2">
               <h3 class="lang-font">Languages</h3>
-              <a href="#"
-                ><img class="icons" src="assets/down-arrow.png" alt="arrow"
-              /></a>
+              <a href="#"><img class="icons" src="images/down-arrow.png" alt="arrow"></a>
             </div>
-            <ul class="langlist">
+            <ul class="langlist"> 
               <li class="language">
-                <img src="assets/jscript.png" alt="js" />
+                <img src="images/jscript.png" alt="js">
                 <h3 class="lang-text">JavaScript</h3>
               </li>
               <li class="language">
-                <img src="assets/html.png" alt="HTML" />
+                <img src="images/html.png" alt="HTML">
                 <h3 class="lang-text">HTML</h3>
               </li>
               <li class="language">
-                <img src="assets/css.png" alt="CSS" />
+                <img src="images/css.png" alt="CSS">
                 <h3 class="lang-text">CSS</h3>
+              </li>
+              <li class="language">
+                <img class="react" src="images/react.png" alt="React">
+                <h3 class="lang-text">React</h3>
+              </li>
+              <li class="language">
+                <img class="react" src="images/download.jpeg" alt="Ruby">
+                <h3 class="lang-text">Ruby</h3>
+              </li>
+              <li class="language">
+                <img class="react" src="images/rails.png" alt="Rails">
+                <h3 class="lang-text">Rails</h3>
               </li>
             </ul>
             <div class="lang lang-2 lang3">
               <h3 class="lang-font">Frameworks</h3>
-              <a href="#"
-                ><img class="icons" src="assets/right-arrow.png" alt="arrow"
-              /></a>
+              <a href="#"><img class="icons" src="images/right-arrow.png" alt="arrow"></a>
             </div>
             <div class="lang lang-2 lang3">
               <h3 class="lang-font">Skills</h3>
-              <a href="#"
-                ><img class="icons" src="assets/right-arrow.png" alt="arrow"
-              /></a>
+              <a href="#"><img class="icons" src="images/right-arrow.png" alt="arrow"></a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-section">
-        <div class="contact-form">
-          <h2 class="con-title">Contact me</h2>
-          <p class="con-paragraph">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-          <form
-            action="https://formspree.io/f/mnqlovzq"
-            method="POST"
-            class="con-form"
-            id="form"
-          >
-            <input
-              type="text"
-              name="_name"
-              placeholder="Name"
-              maxlength="30"
-              class="form-text"
-              id="fname"
-              required
-            />
-            <input
-              type="email"
-              name="_reply"
-              placeholder="Please enter your Email"
-              class="form-text"
-              id="email"
-              required
-            />
-            <textarea
-              name="_message"
-              placeholder="Write your message here"
-              maxlength="500"
-              class="form-text message"
-              id="textarea"
-              required
-            ></textarea>
-            <div class="error-message">
-              <p class="error">
-                <b
-                  >To submit the form, please enter your email id in
-                  lowercase</b
-                >
-              </p>
-            </div>
-            <button class="con-but" id="submit" type="submit">
-              Get in touch
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="TopModalItems">
-            <span class="close">&times;</span>
-            <h2 id="t"></h2>
-          </div>
-          <div class="MidModalItems">
-            <ul class="cards-container">
-              <li class="card-detail canopy">CANOPY</li>
-              <li class="card-detail option">
-                <img src="assets/bullets.png" alt="bullet" class="circle" />
-                Back End Dev
-              </li>
-              <li class="card-detail option">
-                <img src="assets/bullets.png" alt="bullet" class="circle" />
-                2015
-              </li>
-              <li class="card-detail dcanopy2_face">CANOPY</li>
-              <li class="card-detail optiond2_full">
-                <img src="assets/bullets.png" alt="bullet" class="circle" />
-                Back End Dev
-              </li>
-              <li class="card-detail optiond2_full">
-                <img src="assets/bullets.png" alt="bullet" class="circle" />
-                2015
-              </li>
-            </ul>
-          </div>
-
-          <div class="modalImage">
-            <img src="assets/photo1.png" alt="First Card" class="mImage" />
-          </div>
-          <div class="modalImageDesktop">
-            <img
-              src="assets/mydesktop.png"
-              alt="First card-desktop"
-              class="mImageDsk"
-            />
-          </div>
-          <div class="modalTextWrapper">
-            <p class="modalText"></p>
-            <p class="modalTextMobile"></p>
-            <div class="modalFlex">
-              <ul>
-                <li class="modalLang">html</li>
-                <li class="modalLang">css</li>
-                <li class="modalLang">javascript</li>
-              </ul>
-
-              <div class="LangInModal">
-                <ul>
-                  <li class="langu2">html</li>
-                  <li class="langu2">css</li>
-                  <li class="langu2">javascript</li>
-                </ul>
-              </div>
-              <div class="LangInModal2">
-                <ul>
-                  <li class="langu2">github</li>
-                  <li class="langu2">rubby</li>
-                  <li class="langu2">bootstrap</li>
-                </ul>
-              </div>
-              <div class="modalButtons">
-                <button type="button">
-                  See live
-                  <span
-                    ><svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M2 9C2 5.13401 5.13401 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C13.9706 18 18 13.9706 18 9C18 8.44772 17.5523 8 17 8C16.4477 8 16 8.44772 16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9ZM13 0C12.4477 0 12 0.447715 12 1C12 1.55228 12.4477 2 13 2H14.5858L8.29289 8.29289C7.90237 8.68342 7.90237 9.31658 8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711L16 3.41421V5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5V1C18 0.447715 17.5523 0 17 0H13Z"
-                        fill="#6070FF"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <button type="button">
-                  See Source<span>
-                    <svg
-                      width="18"
-                      height="20"
-                      viewBox="0 0 18 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17.9989 7.46114C17.9989 6.32124 17.6329 5.25043 16.9342 4.31779C17.2004 3.41969 17.2669 2.27979 17.2004 0.967185C17.1671 0.414508 16.7345 0 16.2022 0C15.9028 0 13.3741 0.0345423 11.9101 1.38169C10.6458 1.1399 9.31495 1.1399 8.01736 1.38169C6.58667 0.0345423 4.05802 0 3.7253 0C3.19296 0 2.76042 0.414508 2.72715 0.967185C2.62734 2.27979 2.72715 3.41969 2.99333 4.31779C2.29462 5.28497 1.92863 6.35579 1.92863 7.46114C1.92863 9.8791 3.7253 12.0553 6.45358 13.0915C6.35377 13.2988 6.28723 13.5406 6.22068 13.7824C3.32604 13.4715 1.9619 10.7427 1.89536 10.639C1.66246 10.1209 1.06357 9.91364 0.56449 10.19C0.0654144 10.4318 -0.134216 11.0535 0.131958 11.5717C0.198501 11.7444 2.02845 15.4404 6.05432 15.8549V18.9637C6.05432 19.5509 6.48686 20 7.05248 20H12.875C13.4406 20 13.8732 19.5509 13.8732 18.9637V14.8532C13.8732 14.2314 13.7401 13.6442 13.5072 13.1261C16.2022 12.0553 17.9989 9.91364 17.9989 7.46114Z"
-                        fill="#6070FF"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </main>
-
-    <script src="./main.js"></script>
-  </body>
-</html>
+    </section>
+    <section class="contact-section" id="contacts">
+      <div class="contact-form">
+      <h2 class="con-title">Contact me</h2>
+      <p class="con-paragraph">
+        If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
+      </p>
+      <form action="https://formspree.io/f/mnqlovzq" method="POST" class="con-form">
+        <input type="text" name="name" id="names" placeholder="Name" maxlength="30" class="form-text" required>
+        <input type= "email" name="email" placeholder= "Please enter your Email" class="form-text" id="mail" required>
+        <small class="error-message"></small>
+        <textarea id="msg" name="message" placeholder="Write your message here" cols="20" rows="10" maxlength="500"
+          class="form-text message" required></textarea>
+        <button class="con-but" type="submit">Get in touch</button> 
+      </form>
+     </div>
+  </section>
+  </main>
+  <script src="app.js"></script>
+</body>
