@@ -823,7 +823,7 @@ a .btn-two {
     width: 800px;
     height: 300px;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 2rem;
   }
 
   .circle-desktop {
@@ -1128,11 +1128,11 @@ a .btn-two {
   }
 
   .project-card img {
-    transition: all 2s ease;
+    transition: all 1s ease;
   }
 
   .project-card img:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .contact-form p:hover {
