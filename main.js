@@ -4,7 +4,7 @@ const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 
-function toggleMenu() {
+const toggleMenu = () => {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
@@ -98,25 +98,24 @@ const projects = [
   },
 ];
 
-function g(e, isClass = false) {
+const render = (e, isClass = false) => {
   if (isClass) {
     return document.getElementsByClassName(e)[0];
   }
   return document.getElementById(e);
 }
 
-// eslint-disable-next-line no-unused-vars
-function popup(projectIndex) {
+const popup = (projectIndex) => {
   const project = projects[projectIndex];
-  g('t').innerText = project.name;
-  g('mImage', true).src = project.imageUrlMobile;
-  g('mImageDsk', true).src = project.popupImageUrlDesktop;
-  g('modalText', true).innerText = project.bigDescription;
-  g('modalTextMobile', true).innerText = project.smallDescription;
-  g('myModal').style.display = 'block';
+  render('t').innerText = project.name;
+  render('mImage', true).src = project.imageUrlMobile;
+  render('mImageDsk', true).src = project.popupImageUrlDesktop;
+  render('modalText', true).innerText = project.bigDescription;
+  render('modalTextMobile', true).innerText = project.smallDescription;
+  render('myModal').style.display = 'block';
 }
 
-function init() {
+const init = () => {
   for (let k = 0; k < projects.length; k += 1) {
     const project = projects[k];
     const template = document.createElement('template');
@@ -167,19 +166,17 @@ function init() {
       </div>
     </div>`;
 
-    g('projects').appendChild(template.content.firstChild);
+    render('projects').appendChild(template.content.firstChild);
   }
 }
 
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 
-// eslint-disable-next-line func-names
 span.onclick = function () {
   modal.style.display = 'none';
 };
 
-// eslint-disable-next-line func-names
 window.onclick = function (event) {
   if (event.target === modal) {
     modal.style.display = 'none';
@@ -215,7 +212,7 @@ const clientName = document.getElementById('fname');
 const clientEmail = document.getElementById('email');
 const clientMessage = document.getElementById('textarea');
 
-function useLocalStorage() {
+const useLocalStorage = () => {
   const contactFormData = {
     name: clientName.value,
     email: clientEmail.value,
